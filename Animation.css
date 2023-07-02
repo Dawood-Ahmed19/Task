@@ -1,0 +1,96 @@
+.introduction,
+.person--name,
+.paragraph {
+  animation: translateDown 2s;
+}
+
+.button {
+  animation: translateUp 3s;
+}
+
+.nav--items img {
+  animation: translateRight 500ms;
+}
+
+.nav--items > ul {
+  animation: fadeOut 1s;
+}
+
+.right--nav {
+  animation: translateLeft 800ms;
+}
+
+.col02 img {
+  animation: translateUpImage 1500ms;
+}
+
+.cross--button > i {
+  animation: translateDown 700ms;
+}
+
+@keyframes translateDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes translateUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes translateUpImage {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes translateRight {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes translateLeft {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
