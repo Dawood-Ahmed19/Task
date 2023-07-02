@@ -231,7 +231,7 @@ img {
 
 .col02 .image::before {
   content: "";
-  background: url(/Src/cirlc.png);
+  background: url(Src/cirlc.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -244,7 +244,7 @@ img {
 
 .col02 .image::after {
   content: "";
-  background: url(/Src/icon-1.png);
+  background: url(Src/icon-1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
