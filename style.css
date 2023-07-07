@@ -54,10 +54,6 @@ ul.nav-ul li > a:hover::after,
   background-color: white;
 }
 
-body {
-  background-color: var(--secondary-color);
-}
-
 .nav_container {
   inset: 0;
   display: flex;
@@ -128,9 +124,15 @@ a.btn--contact:hover {
   );
 }
 
-.hero--container {
+.hero--section {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
   padding-block: 110px;
-  height: 100vh;
+}
+
+.hero--container {
+  height: 100%;
   width: min(1600px, 100% - 2rem);
   margin: 0 auto;
   display: flex;
@@ -213,6 +215,11 @@ h1.bold--font {
   display: flex;
   position: relative;
   place-content: center;
+  z-index: 1;
+}
+
+.buttons {
+  z-index: 999;
 }
 
 img {
@@ -231,7 +238,7 @@ img {
 
 .col02 .image::before {
   content: "";
-  background: url(Src/cirlc.png);
+  background: url(Assets/cirlc.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -244,7 +251,7 @@ img {
 
 .col02 .image::after {
   content: "";
-  background: url(Src/icon-1.png);
+  background: url(Assets/icon-1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -312,9 +319,22 @@ img {
 @media (max-width: 1024px) {
   .content {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.7fr 1fr;
     gap: 30px;
     grid-template-areas: "row01" "row02";
+  }
+
+  .hero--section {
+    padding-block: 10px;
+  }
+
+  .content {
+    place-items: center;
+    gap: 0;
+  }
+
+  .col02 {
+    justify-content: center;
   }
 
   body {
@@ -456,4 +476,12 @@ ul.btns li a:hover {
     transform: translateX(-10px);
     opacity: 0;
   }
+}
+
+/* Skill Section */
+
+.skills-section {
+  height: 100vh;
+  background-color: var(--bg-color);
+  width: 100%;
 }
