@@ -16,10 +16,7 @@ body {
 
 header {
   background-color: var(--secondary-color);
-  position: fixed;
-  inset: 0;
   height: 120px;
-  z-index: 100;
 }
 
 :root {
@@ -128,7 +125,6 @@ a.btn--contact:hover {
   background-color: var(--secondary-color);
   height: 100%;
   width: 100%;
-  padding-block: 110px;
 }
 
 .hero--container {
@@ -458,7 +454,9 @@ ul.btns li a:hover {
   width: 50px;
   height: 45px;
   background: linear-gradient(90deg, transparent, #fff, transparent);
-  animation: shineFlare 0.5s linear 5s infinite;
+  animation-name: shineFlare;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
 }
 
 @keyframes shineFlare {
@@ -481,7 +479,76 @@ ul.btns li a:hover {
 /* Skill Section */
 
 .skills-section {
-  height: 100vh;
+  height: 100%;
   background-color: var(--bg-color);
   width: 100%;
+  padding-block: 200px;
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+}
+
+.skills-col01 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "col01 col02"
+    "r2col1 r2col2";
+  gap: 30px;
+}
+
+.card01 {
+  grid-area: col01;
+}
+
+.card02 {
+  grid-area: col02;
+}
+
+.card03 {
+  grid-area: r2col1;
+}
+
+.card04 {
+  grid-area: r2col2;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 40px;
+}
+
+.card--content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card--image > i {
+  font-size: 20px;
+  padding: 40px;
+  border-radius: 50%;
+  color: #64f4ab;
+  background-color: var(--bg-color);
+  border: 1px #64f4ab solid;
+}
+
+.card--heading > h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card--details > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 }
