@@ -577,3 +577,34 @@ ul.btns li a:hover {
   font-weight: 400;
   color: white;
 }
+
+.skills-col02 {
+  width: 100%;
+  padding-inline-start: 150px;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question > h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: white;
+}
+
+.info--para {
+  width: 90%;
+}
+
+.info--para > p {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.download-button {
+  margin-top: 25px;
+}
