@@ -311,6 +311,10 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .col01 {
+    align-self: flex-start;
+  }
+
   .content {
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 1fr;
@@ -667,4 +671,18 @@ ul.btns li a:hover {
   .skills-section {
     padding-top: 0px;
   }
+}
+
+/* Portfolio Section */
+
+portfolio--section {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.portfolio--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
