@@ -689,12 +689,12 @@ img.rotationalImage.activeImage {
   }
 
   .col-02,
-  .column2 {
+  .column1 {
     grid-row: 1;
   }
 
   .col-01,
-  .column1 {
+  .column2 {
     grid-row: 2;
   }
 }
