@@ -668,6 +668,10 @@ img.rotationalImage.activeImage {
     padding-block: 0px;
   }
 
+  .project--container {
+    padding-top: 0px !important;
+  }
+
   .project--details > p {
     width: 100%;
   }
