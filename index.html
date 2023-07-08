@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link rel="stylesheet" href="./Animation.css" />
     <title>Task</title>
     <link rel="stylesheet" href="./style.css" />
@@ -103,7 +107,7 @@
             <div class="cards--section">
               <!-- card 1 -->
 
-              <div class="card card01">
+              <div data-aos="zoom-in" class="card card01">
                 <div class="card--content">
                   <div class="card--image">
                     <i class="fa-solid fa-vector-square"></i>
@@ -119,7 +123,7 @@
 
               <!-- Card 2 -->
 
-              <div class="card card02">
+              <div data-aos="zoom-in" data-aos-delay="200" class="card card02">
                 <div class="card--content">
                   <div class="card--image">
                     <i class="fa-regular fa-pen-to-square"></i>
@@ -134,7 +138,7 @@
               </div>
 
               <!-- card 3 -->
-              <div class="card card03">
+              <div data-aos="zoom-in" data-aos-delay="300" class="card card03">
                 <div class="card--content">
                   <div class="card--image">
                     <i class="fa-solid fa-layer-group"></i>
@@ -149,7 +153,7 @@
               </div>
 
               <!-- card 4 -->
-              <div class="card card04">
+              <div data-aos="zoom-in" data-aos-delay="400" class="card card04">
                 <div class="card--content">
                   <div class="card--image">
                     <i class="fa-solid fa-ruler"></i>
@@ -166,7 +170,7 @@
               <!-- card ends -->
             </div>
           </div>
-          <div class="skills-col02">
+          <div data-aos="fade-up" data-aos-delay="100" class="skills-col02">
             <div class="introduction">
               <div class="dash"></div>
               <h5>My Skills</h5>
@@ -198,6 +202,10 @@
     <!-- Scripts -->
     <script type="module" src="main.js"></script>
     <script src="animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Scripts -->
   </body>
 </html>
