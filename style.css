@@ -665,11 +665,19 @@ img.rotationalImage.activeImage {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    /* padding-block: 30px; */
+    padding-block: 0px;
   }
 
   .project--details > p {
     width: 100%;
+  }
+
+  .second--container {
+    padding-block: 50px;
+  }
+
+  .portfolio--container {
+    padding-top: 0px !important;
   }
 
   .column2 {
